@@ -1518,3 +1518,6 @@ jobs:
       - name: "Fix ownership"
         run: breeze ci fix-ownership
         if: always()
+        
+        - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
